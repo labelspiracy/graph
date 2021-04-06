@@ -1,0 +1,70 @@
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+    <div id="graph"></div>
+
+    <script>
+        const data = [
+            {
+                type: "label",
+                domain: "msc.org",
+                parents: []
+            },
+            {
+                type: "lobby",
+                domain: "fsc.org",
+                parents: ["msc.org"]
+            }
+        ];
+
+        const links = [];
+
+        data.forEach(node => {
+            if (node.parents && node.parents.length) {
+                node.parents.forEach(parentId => {
+                    links.push({
+                        source: node.domain,
+                        target: parentId
+                    });
+                });
+            }
+
+            node.id = node.domain;
+        });
+
+        const gData = {
+            nodes: data,
+            links
+        };
+
+        const Graph = ForceGraph()
+            (document.getElementById('graph'))
+            .nodeCanvasObject(({ domain, x, y }, ctx) => {
+                const size = 12;
+                const img = new Image();
+                img.src = `https://logo.clearbit.com/${domain}`;
+                ctx.drawImage(img, x - size / 2, y - size / 2, size, size);
+            })
+            .nodePointerAreaPaint((node, color, ctx) => {
+                const size = 12;
+                ctx.fillStyle = color;
+                ctx.fillRect(node.x - size / 2, node.y - size / 2, size, size); // draw square as pointer trap
+            })
+            .graphData(gData)
+            .nodeLabel('domain')
+            .nodeAutoColorBy('type')
+            .onNodeClick(node => {
+                // Center/zoom on node
+                Graph.centerAt(node.x, node.y, 1000);
+                Graph.zoom(8, 2000);
+            });
+    </script>
+</body>
