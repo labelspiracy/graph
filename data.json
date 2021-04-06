@@ -1,0 +1,12 @@
+[
+            {
+                "type": "label",
+                "domain": "msc.org",
+                "parents": []
+            },
+            {
+                "type": "lobby",
+                "domain": "fsc.org",
+                "parents": ["msc.org"]
+            }
+        ]
