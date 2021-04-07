@@ -1,12 +1,83 @@
 [
-            {
-                "type": "label",
-                "domain": "msc.org",
-                "parents": []
-            },
-            {
-                "type": "lobby",
-                "domain": "fsc.org",
-                "parents": ["msc.org"]
-            }
-        ]
+    {
+        "type": "ngo",
+        "domain": "earthisland.org"
+    },
+    {
+        "type": "label",
+        "domain": "savedolphins.eii.org",
+        "links": ["earthisland.org"]
+    },
+    {
+        "type": "label",
+        "domain": "plasticpollutioncoalition.org",
+        "links": ["earthisland.org"]
+    },
+    {
+        "type": "ngo",
+        "domain": "ecoembes.com",
+        "links": ["danone.es", "loreal.com", "nestle.es", "unilever.es", "mercadona.es", "alcampo.es", "coca-cola.com"]
+    },
+    {
+        "type": "corporate",
+        "domain": "danone.es"
+    },
+    {
+        "type": "corporate",
+        "domain": "loreal.com"
+    },
+    {
+        "type": "corporate",
+        "domain": "nestle.es"
+    },
+    {
+        "type": "corporate",
+        "domain": "unilever.es"
+    },
+    {
+        "type": "corporate",
+        "domain": "mercadona.es"
+    },
+    {
+        "type": "corporate",
+        "domain": "alcampo.es"
+    },
+    {
+        "type": "ngo",
+        "domain": "coreprojects.com",
+        "image": "https://coreprojects.com/wp-content/themes/core-home/img/favicon.ico",
+        "links": ["pmi.com", "coca-cola.com"]
+    },
+    {
+        "type": "corporate",
+        "domain": "pmi.com"
+    },
+    {
+        "type": "corporate",
+        "domain": "coca-cola.com"
+    },
+    {
+        "type": "ngo",
+        "domain": "projectlastmile.com",
+        "links": ["coca-cola.com"]
+    },
+    {
+        "type": "label",
+        "domain": "bleu-blanc-coeur.org",
+        "links": ["magasins-u.com", "intermarche.com", "sodiaal.coop"],
+        "sources": ["https://www.linkedin.com/pulse/bleu-blanc-c%C5%93ur-garde-le-cap-et-se-fixe-de-nouvelles-r%C3%A8gles-kerhoas/"]
+    },
+    {
+        "type": "corporate",
+        "domain": "magasins-u.com"
+    },
+    {
+        "type": "corporate",
+        "domain": "intermarche.com",
+        "image": "https://www.intermarche.com/favicon.ico"
+    },
+    {
+        "type": "corporate",
+        "domain": "sodiaal.coop"
+    }
+]
