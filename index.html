@@ -16,20 +16,22 @@
 </head>
 
 <body>
-    <h1>Labels & their upstream connections</h1>
+    <h1>Labels/NGOs & their upstream connections</h1>
 
     <div id="graph"></div>
 
+    <a href="https://clearbit.com">Logos provided by Clearbit</a> 
+
     <script>
-        fetch('https://labelspiracy.github.io/data.json').then(res => res.json()).then(data => {
+        fetch('./data.json').then(res => res.json()).then(data => {
             const links = [];
 
             data.forEach(node => {
-                if (node.parents && node.parents.length) {
-                    node.parents.forEach(parentId => {
+                if (node.links && node.links.length) {
+                    node.links.forEach(linksId => {
                         links.push({
                             source: node.domain,
-                            target: parentId
+                            target: linksId
                         });
                     });
                 }
@@ -44,10 +46,10 @@
 
             const Graph = ForceGraph()
                 (document.getElementById('graph'))
-                .nodeCanvasObject(({ domain, x, y }, ctx) => {
+                .nodeCanvasObject(({ image, domain, x, y }, ctx) => {
                     const size = 12;
                     const img = new Image();
-                    img.src = `https://logo.clearbit.com/${domain}`;
+                    img.src = image || `https://logo.clearbit.com/${domain}?size=${80}`;
                     ctx.drawImage(img, x - size / 2, y - size / 2, size, size);
                 })
                 .nodePointerAreaPaint((node, color, ctx) => {
