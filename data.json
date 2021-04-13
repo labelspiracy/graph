@@ -122,11 +122,6 @@
     },
     {
         "type": "reasearch",
-        "domain": "http://ccrd.edu.pk",
-        "links": ["ccacoalition.org"]
-    },
-    {
-        "type": "reasearch",
         "domain": "climateandhealthresearch.org",
         "links": ["ccacoalition.org"]
     },
@@ -162,7 +157,8 @@
     },
     {
         "type": "association",
-        "domain": "alliancepolicy.org"
+        "domain": "alliancepolicy.org",
+        "links": ["ccacoalition.org"]
     },
     {
         "type": "agency",
