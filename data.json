@@ -19,27 +19,27 @@
         "links": ["danone.es", "loreal.com", "nestle.es", "unilever.es", "mercadona.es", "alcampo.es", "coca-cola.com"]
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "danone.es"
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "loreal.com"
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "nestle.es"
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "unilever.es"
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "mercadona.es"
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "alcampo.es"
     },
     {
@@ -49,12 +49,13 @@
         "links": ["pmi.com", "coca-cola.com"]
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "pmi.com"
     },
     {
-        "type": "corporate",
-        "domain": "coca-cola.com"
+        "type": "corporation",
+        "domain": "coca-cola.com",
+        "links": ["ccacoalition.org"]
     },
     {
         "type": "ngo",
@@ -68,16 +69,119 @@
         "sources": ["https://www.linkedin.com/pulse/bleu-blanc-c%C5%93ur-garde-le-cap-et-se-fixe-de-nouvelles-r%C3%A8gles-kerhoas/"]
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "magasins-u.com"
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "intermarche.com",
         "image": "https://www.intermarche.com/favicon.ico"
     },
     {
-        "type": "corporate",
+        "type": "corporation",
         "domain": "sodiaal.coop"
+    },
+    {
+        "type": "association",
+        "domain": "ipieca.org",
+        "links": ["iogp.org", "ogci.com"]
+    },
+    {
+        "type": "association",
+        "domain": "iogp.org",
+        "links": ["ospar.org", "imo.org", "glofouling.imo.org", "ogci.com", "ipieca.org"]
+    },
+    {
+        "type": "misc",
+        "domain": "ospar.org"
+    },
+    {
+        "type": "association",
+        "domain": "ccacoalition.org",
+        "sources": ["https://www.ccacoalition.org/en/partners-and-actors?page=1&f%5B0%5D=node%253Afield_partner_type%3Aactor"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "ccrd.edu.pk",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "ccafs.cgiar.org",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "cemda.org.mx",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "centrogalileo.it",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "http://ccrd.edu.pk",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "climateandhealthresearch.org",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "climate-kic.org",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "corporation",
+        "domain": "climatecare.org",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "reasearch",
+        "domain": "ecreee.org",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "association",
+        "domain": "entrepreneursdumonde.org",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "corporation",
+        "domain": "ikea.com",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "foundation",
+        "domain": "waste.nl",
+        "links": ["ccacoalition.org"]
+    },
+    {
+        "type": "association",
+        "domain": "alliancepolicy.org"
+    },
+    {
+        "type": "agency",
+        "domain": "imo.org"
+    },
+    {
+        "type": "association",
+        "domain": "glofouling.imo.org"
+    },
+    {
+        "type": "organisation",
+        "domain": "ogci.com",
+        "links": ["ipieca.org", "iogp.org"],
+        "sources":["https://www.ogci.com/action-and-engagement/#investing"]
+    },
+    {
+        "type": "corporation",
+        "domain": "repsol.com",
+        "links": ["ccacoalition.org", "ipieca.org", "iogp.org"],
+        "sources": ["https://www.repsol.com/en/sustainability/initiatives-and-memberships/index.cshtml"] 
     }
 ]
