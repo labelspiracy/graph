@@ -179,5 +179,30 @@
         "domain": "repsol.com",
         "links": ["ccacoalition.org", "ipieca.org", "iogp.org"],
         "sources": ["https://www.repsol.com/en/sustainability/initiatives-and-memberships/index.cshtml"] 
+    },
+    {
+        "type": "corporation",
+        "domain": "bp.com",
+        "links": ["ipieca.org"]
+    },
+    {
+        "type": "corporation",
+        "domain": "cepsa.com",
+        "links": ["ipieca.org"]
+    },
+    {
+        "type": "corporation",
+        "domain": "chevron.com",
+        "links": ["ipieca.org"]
+    },
+    {
+        "type": "corporation",
+        "domain": "shell.com",
+        "links": ["ipieca.org"]
+    },
+    {
+        "type": "corporation",
+        "domain": "total.com",
+        "links": ["ipieca.org"]
     }
 ]
