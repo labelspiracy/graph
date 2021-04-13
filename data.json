@@ -204,5 +204,10 @@
         "type": "corporation",
         "domain": "total.com",
         "links": ["ipieca.org"]
+    },
+    {
+        "type": "corporation",
+        "domain": "bakerhughes.com",
+        "links": ["ipieca.org"]
     }
 ]
